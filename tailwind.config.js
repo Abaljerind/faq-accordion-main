@@ -7,12 +7,20 @@ module.exports = {
         "2xl": "1440px",
       },
       fontFamily: {
-        "work-sans": ["Work Sans", "sans-serif"],
+        "work-sans": ["Work Sans"],
       },
       colors: {
         "light-pink": "#F9F0FF",
         "grayish-purple": "#8C6991",
         "dark-purple": "#2F1533",
+      },
+      backgroundImage: {
+        "pattern-desktop":
+          "url('/assets/images/background-pattern-desktop.svg')",
+        "pattern-mobile": "url('/assets/images/background-pattern-mobile.svg')",
+        "icon-minus": "url('/assets/images/icon-minus.svg')",
+        "icon-plus": "url('/assets/images/icon-plus.svg')",
+        "icon-star": "url('/assets/images/icon-star.svg')",
       },
     },
   },
