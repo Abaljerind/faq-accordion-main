@@ -17,4 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
       this.previousElementSibling.classList.remove("hidden"); // disini elemen sebelumnya adalah icon-plus
     });
   });
+
+  //   function untuk klik pertanyaan nya
+  const questions = Array.from({ length: 4 }, (_, i) =>
+    document.getElementById(`question${i + 1}`),
+  );
+  const answers = Array.from({ length: 4 }, (_, i) =>
+    document.getElementById(`answer${i + 1}`),
+  );
+  const iconPluses = Array.from({ length: 4 }, (_, i) =>
+    document.getElementById(`iconplus${i + 1}`),
+  );
+  const iconMinuses = Array.from({ length: 4 }, (_, i) =>
+    document.getElementById(`iconminus${i + 1}`),
+  );
+
+  questions.forEach((question, i) => {
+    question.addEventListener("click", () => {
+      answers[i].classList.toggle("hidden");
+      iconPluses[i].classList.toggle("hidden");
+      iconMinuses[i].classList.toggle("hidden");
+    });
+  });
 });
