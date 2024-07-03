@@ -637,12 +637,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-32 {
   margin-top: 8rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -839,6 +839,10 @@ video {
 @media (min-width: 1024px) {
   .lg\:top-20 {
     top: 5rem;
+  }
+
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .lg\:h-10 {
