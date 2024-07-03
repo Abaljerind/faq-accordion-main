@@ -13,6 +13,7 @@ module.exports = {
         "light-pink": "#F9F0FF",
         "grayish-purple": "#8C6991",
         "dark-purple": "#2F1533",
+        "active-state": "#AD28EB",
       },
       backgroundImage: {
         "pattern-desktop":
