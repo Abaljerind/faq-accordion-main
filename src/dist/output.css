@@ -716,6 +716,10 @@ video {
   background-image: url('/assets/images/background-pattern-mobile.svg');
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -783,12 +787,69 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 768px) {
-  .md\:bg-pattern-desktop {
+.hover\:text-active-state:hover {
+  --tw-text-opacity: 1;
+  color: rgb(173 40 235 / var(--tw-text-opacity));
+}
+
+.active\:text-active-state:active {
+  --tw-text-opacity: 1;
+  color: rgb(173 40 235 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:relative {
+    position: relative;
+  }
+
+  .sm\:-top-14 {
+    top: -3.5rem;
+  }
+
+  .sm\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .sm\:w-3\/5 {
+    width: 60%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:bg-pattern-desktop {
     background-image: url('/assets/images/background-pattern-desktop.svg');
   }
 
-  .md\:bg-cover {
+  .sm\:bg-cover {
     background-size: cover;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:top-20 {
+    top: 5rem;
+  }
+
+  .lg\:w-\[38\%\] {
+    width: 38%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:rounded-xl {
+    border-radius: 0.75rem;
   }
 }
