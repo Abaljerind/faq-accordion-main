@@ -23,6 +23,9 @@
   ],
   "author": "AbalJerind",
   "license": "ISC",
+  "engines": {
+  "node": ">=22"
+  },
   "bugs": {
     "url": "https://github.com/Abaljerind/faq-accordion-main/issues"
   },
